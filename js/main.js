@@ -1,0 +1,13 @@
+const searchInput = document.querySelector("#search-input");
+
+searchInput.addEventListener("keydown", function(event) {
+  if(event.code === "Enter") {
+    search();
+  }
+});
+
+function search() {
+  const input = searchInput.value;
+
+  window.location.href = "https://www.google.com/search?q=" + input +"&hl=en&ei=pxuzY7UExPXj4Q_0h5ygBg&ved=0ahUKEwj188PFu6n8AhXE-jgGHfQDB2QQ4dUDCA8&uact=5&oq=" + input +"&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzILCC4QgAQQsQMQ1AIyCAgAEIAEELEDMgsIABCABBCxAxCDATIICAAQsQMQgwEyCwgAEIAEELEDEIMBMgsIABCABBCxAxCDATILCAAQgAQQsQMQgwEyCwgAEIAEELEDEIMBMgsILhCABBCxAxDUAjILCAAQgAQQsQMQgwE6CggAEEcQ1gQQsAM6BwgAELADEEM6CgguENQCELADEEM6DAguEMgDELADEEMYAToPCC4Q1AIQyAMQsAMQQxgBOgUIABCRAjoRCC4QgwEQxwEQsQMQ0QMQgAQ6CggAELEDEIMBEEM6CgguELEDEIMBEEM6BAgAEEM6CgguEIMBELEDEEM6CgguEMcBENEDEEM6CgguEMcBEK8BEEM6BwgAELEDEEM6CgguELEDENQCEEM6BAguEEM6BwguENQCEEM6DQguELEDEMcBENEDEEM6BQguEIAEOgcIABCABBAKOgoIABCABBCxAxAKOgUIABCABDoNCAAQgAQQsQMQyQMQCkoECEEYAEoECEYYAVCIDlj2JWCfKWgEcAF4AIABnAGIAeYHkgEDMC43mAEAoAEByAERwAEB2gEGCAEQARgI&sclient=gws-wiz-serp"
+}
